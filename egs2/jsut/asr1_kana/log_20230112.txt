@@ -1,0 +1,17 @@
+2023-01-12T04:38:34 (asr.sh:254:main) ./asr.sh --ngpu 4 --lang jp --token_type char --feats_type raw --fs 16000 --speed_perturb_factors 0.9 1.0 1.1 --local_data_opts --fs 16000 --asr_config conf/tuning/train_asr_conformer8.yaml --inference_config conf/decode_transformer.yaml --lm_config conf/train_lm.yaml --train_set tr_no_dev --valid_set dev --test_sets dev eval1 --lm_train_text data/tr_no_dev/text --audio_format flac --stage 6 --ngpu 1
+2023-01-12T04:38:34 (asr.sh:727:main) Stage 6: LM collect stats: train_set=dump/raw/lm_train.txt, dev_set=dump/raw/dev/text
+2023-01-12T04:38:34 (asr.sh:759:main) Generate 'exp/lm_stats_jp_char/run.sh'. You can resume the process from stage 6 using this script
+2023-01-12T04:38:34 (asr.sh:763:main) LM collect-stats started... log: 'exp/lm_stats_jp_char/logdir/stats.*.log'
+2023-01-12T04:38:46 (asr.sh:804:main) Stage 7: LM Training: train_set=dump/raw/lm_train.txt, dev_set=dump/raw/dev/text
+2023-01-12T04:38:46 (asr.sh:841:main) Generate 'exp/lm_train_lm_jp_char/run.sh'. You can resume the process from stage 7 using this script
+2023-01-12T04:38:46 (asr.sh:844:main) LM training started... log: 'exp/lm_train_lm_jp_char/train.log'
+2023-01-12T04:39:51 (asr.sh:880:main) Stage 8: Calc perplexity: dump/raw/dev/text
+2023-01-12T04:39:51 (asr.sh:883:main) Perplexity calculation started... log: 'exp/lm_train_lm_jp_char/perplexity_test/lm_calc_perplexity.log'
+2023-01-12T04:40:01 (asr.sh:893:main) PPL: dump/raw/dev/text: 7.617147988886046
+2023-01-12T04:40:01 (asr.sh:911:main) Stage 9: Skip ngram stages: use_ngram=false
+2023-01-12T04:40:01 (asr.sh:919:main) Stage 10: ASR collect stats: train_set=dump/raw/tr_no_dev_sp, valid_set=dump/raw/dev
+2023-01-12T04:40:02 (asr.sh:969:main) Generate 'exp/asr_stats_raw_jp_char_sp/run.sh'. You can resume the process from stage 10 using this script
+2023-01-12T04:40:02 (asr.sh:973:main) ASR collect-stats started... log: 'exp/asr_stats_raw_jp_char_sp/logdir/stats.*.log'
+2023-01-12T04:40:30 (asr.sh:1020:main) Stage 11: ASR Training: train_set=dump/raw/tr_no_dev_sp, valid_set=dump/raw/dev
+2023-01-12T04:40:30 (asr.sh:1087:main) Generate 'exp/asr_train_asr_conformer8_raw_jp_char_sp/run.sh'. You can resume the process from stage 11 using this script
+2023-01-12T04:40:30 (asr.sh:1091:main) ASR training started... log: 'exp/asr_train_asr_conformer8_raw_jp_char_sp/train.log'

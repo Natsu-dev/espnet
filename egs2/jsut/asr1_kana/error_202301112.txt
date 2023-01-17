@@ -1,0 +1,745 @@
+nohup: 入力を無視します
+/home/abelab/t_oka/miniconda3/envs/espnet/bin/python3 /work/abelab4/t_oka/espnet/espnet2/bin/aggregate_stats_dirs.py --input_dir exp/lm_stats_jp_char/logdir/stats.1 --input_dir exp/lm_stats_jp_char/logdir/stats.2 --input_dir exp/lm_stats_jp_char/logdir/stats.3 --input_dir exp/lm_stats_jp_char/logdir/stats.4 --input_dir exp/lm_stats_jp_char/logdir/stats.5 --input_dir exp/lm_stats_jp_char/logdir/stats.6 --input_dir exp/lm_stats_jp_char/logdir/stats.7 --input_dir exp/lm_stats_jp_char/logdir/stats.8 --input_dir exp/lm_stats_jp_char/logdir/stats.9 --input_dir exp/lm_stats_jp_char/logdir/stats.10 --input_dir exp/lm_stats_jp_char/logdir/stats.11 --input_dir exp/lm_stats_jp_char/logdir/stats.12 --input_dir exp/lm_stats_jp_char/logdir/stats.13 --input_dir exp/lm_stats_jp_char/logdir/stats.14 --input_dir exp/lm_stats_jp_char/logdir/stats.15 --input_dir exp/lm_stats_jp_char/logdir/stats.16 --input_dir exp/lm_stats_jp_char/logdir/stats.17 --input_dir exp/lm_stats_jp_char/logdir/stats.18 --input_dir exp/lm_stats_jp_char/logdir/stats.19 --input_dir exp/lm_stats_jp_char/logdir/stats.20 --input_dir exp/lm_stats_jp_char/logdir/stats.21 --input_dir exp/lm_stats_jp_char/logdir/stats.22 --input_dir exp/lm_stats_jp_char/logdir/stats.23 --input_dir exp/lm_stats_jp_char/logdir/stats.24 --input_dir exp/lm_stats_jp_char/logdir/stats.25 --input_dir exp/lm_stats_jp_char/logdir/stats.26 --input_dir exp/lm_stats_jp_char/logdir/stats.27 --input_dir exp/lm_stats_jp_char/logdir/stats.28 --input_dir exp/lm_stats_jp_char/logdir/stats.29 --input_dir exp/lm_stats_jp_char/logdir/stats.30 --input_dir exp/lm_stats_jp_char/logdir/stats.31 --input_dir exp/lm_stats_jp_char/logdir/stats.32 --output_dir exp/lm_stats_jp_char
+2023-01-12 04:38:46,787 (launch:94) INFO: /home/abelab/t_oka/miniconda3/envs/espnet/bin/python3 /work/abelab4/t_oka/espnet/espnet2/bin/launch.py --cmd 'run.pl --name exp/lm_train_lm_jp_char/train.log' --log exp/lm_train_lm_jp_char/train.log --ngpu 1 --num_nodes 1 --init_file_prefix exp/lm_train_lm_jp_char/.dist_init_ --multiprocessing_distributed true -- python3 -m espnet2.bin.lm_train --ngpu 1 --use_preprocessor true --bpemodel none --token_type char --token_list data/jp_token_list/char/tokens.txt --non_linguistic_symbols none --cleaner none --g2p none --valid_data_path_and_name_and_type dump/raw/dev/text,text,text --valid_shape_file exp/lm_stats_jp_char/valid/text_shape.char --fold_length 150 --resume true --output_dir exp/lm_train_lm_jp_char --config conf/train_lm.yaml --train_data_path_and_name_and_type dump/raw/lm_train.txt,text,text --train_shape_file exp/lm_stats_jp_char/train/text_shape.char
+2023-01-12 04:38:46,916 (launch:348) INFO: log file: exp/lm_train_lm_jp_char/train.log
+/home/abelab/t_oka/miniconda3/envs/espnet/bin/python3 /work/abelab4/t_oka/espnet/espnet2/bin/aggregate_stats_dirs.py --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.1 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.2 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.3 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.4 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.5 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.6 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.7 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.8 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.9 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.10 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.11 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.12 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.13 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.14 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.15 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.16 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.17 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.18 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.19 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.20 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.21 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.22 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.23 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.24 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.25 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.26 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.27 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.28 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.29 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.30 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.31 --input_dir exp/asr_stats_raw_jp_char_sp/logdir/stats.32 --output_dir exp/asr_stats_raw_jp_char_sp
+2023-01-12 04:40:30,594 (launch:94) INFO: /home/abelab/t_oka/miniconda3/envs/espnet/bin/python3 /work/abelab4/t_oka/espnet/espnet2/bin/launch.py --cmd 'run.pl --name exp/asr_train_asr_conformer8_raw_jp_char_sp/train.log' --log exp/asr_train_asr_conformer8_raw_jp_char_sp/train.log --ngpu 1 --num_nodes 1 --init_file_prefix exp/asr_train_asr_conformer8_raw_jp_char_sp/.dist_init_ --multiprocessing_distributed true -- python3 -m espnet2.bin.asr_train --use_preprocessor true --bpemodel none --token_type char --token_list data/jp_token_list/char/tokens.txt --non_linguistic_symbols none --cleaner none --g2p none --valid_data_path_and_name_and_type dump/raw/dev/wav.scp,speech,sound --valid_data_path_and_name_and_type dump/raw/dev/text,text,text --valid_shape_file exp/asr_stats_raw_jp_char_sp/valid/speech_shape --valid_shape_file exp/asr_stats_raw_jp_char_sp/valid/text_shape.char --resume true --init_param --ignore_init_mismatch false --fold_length 80000 --fold_length 150 --output_dir exp/asr_train_asr_conformer8_raw_jp_char_sp --config conf/tuning/train_asr_conformer8.yaml --frontend_conf fs=16000 --normalize=global_mvn --normalize_conf stats_file=exp/asr_stats_raw_jp_char_sp/train/feats_stats.npz --train_data_path_and_name_and_type dump/raw/tr_no_dev_sp/wav.scp,speech,sound --train_data_path_and_name_and_type dump/raw/tr_no_dev_sp/text,text,text --train_shape_file exp/asr_stats_raw_jp_char_sp/train/speech_shape --train_shape_file exp/asr_stats_raw_jp_char_sp/train/text_shape.char
+2023-01-12 04:40:30,748 (launch:348) INFO: log file: exp/asr_train_asr_conformer8_raw_jp_char_sp/train.log
+run.pl: job failed, log is in exp/asr_train_asr_conformer8_raw_jp_char_sp/train.log
+Command '['run.pl', '--name', 'exp/asr_train_asr_conformer8_raw_jp_char_sp/train.log', '--gpu', '1', 'exp/asr_train_asr_conformer8_raw_jp_char_sp/train.log', 'python3', '-m', 'espnet2.bin.asr_train', '--use_preprocessor', 'true', '--bpemodel', 'none', '--token_type', 'char', '--token_list', 'data/jp_token_list/char/tokens.txt', '--non_linguistic_symbols', 'none', '--cleaner', 'none', '--g2p', 'none', '--valid_data_path_and_name_and_type', 'dump/raw/dev/wav.scp,speech,sound', '--valid_data_path_and_name_and_type', 'dump/raw/dev/text,text,text', '--valid_shape_file', 'exp/asr_stats_raw_jp_char_sp/valid/speech_shape', '--valid_shape_file', 'exp/asr_stats_raw_jp_char_sp/valid/text_shape.char', '--resume', 'true', '--init_param', '--ignore_init_mismatch', 'false', '--fold_length', '80000', '--fold_length', '150', '--output_dir', 'exp/asr_train_asr_conformer8_raw_jp_char_sp', '--config', 'conf/tuning/train_asr_conformer8.yaml', '--frontend_conf', 'fs=16000', '--normalize=global_mvn', '--normalize_conf', 'stats_file=exp/asr_stats_raw_jp_char_sp/train/feats_stats.npz', '--train_data_path_and_name_and_type', 'dump/raw/tr_no_dev_sp/wav.scp,speech,sound', '--train_data_path_and_name_and_type', 'dump/raw/tr_no_dev_sp/text,text,text', '--train_shape_file', 'exp/asr_stats_raw_jp_char_sp/train/speech_shape', '--train_shape_file', 'exp/asr_stats_raw_jp_char_sp/train/text_shape.char', '--ngpu', '1', '--multiprocessing_distributed', 'True']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/work/abelab4/t_oka/espnet/espnet2/bin/launch.py", line 384, in <module>
+    main()
+  File "/work/abelab4/t_oka/espnet/espnet2/bin/launch.py", line 375, in main
+    raise RuntimeError(
+RuntimeError: 
+################### The last 1000 lines of exp/asr_train_asr_conformer8_raw_jp_char_sp/train.log ###################
+# python3 -m espnet2.bin.asr_train --use_preprocessor true --bpemodel none --token_type char --token_list data/jp_token_list/char/tokens.txt --non_linguistic_symbols none --cleaner none --g2p none --valid_data_path_and_name_and_type dump/raw/dev/wav.scp,speech,sound --valid_data_path_and_name_and_type dump/raw/dev/text,text,text --valid_shape_file exp/asr_stats_raw_jp_char_sp/valid/speech_shape --valid_shape_file exp/asr_stats_raw_jp_char_sp/valid/text_shape.char --resume true --init_param --ignore_init_mismatch false --fold_length 80000 --fold_length 150 --output_dir exp/asr_train_asr_conformer8_raw_jp_char_sp --config conf/tuning/train_asr_conformer8.yaml --frontend_conf fs=16000 --normalize=global_mvn --normalize_conf stats_file=exp/asr_stats_raw_jp_char_sp/train/feats_stats.npz --train_data_path_and_name_and_type dump/raw/tr_no_dev_sp/wav.scp,speech,sound --train_data_path_and_name_and_type dump/raw/tr_no_dev_sp/text,text,text --train_shape_file exp/asr_stats_raw_jp_char_sp/train/speech_shape --train_shape_file exp/asr_stats_raw_jp_char_sp/train/text_shape.char --ngpu 1 --multiprocessing_distributed True 
+# Started at Thu Jan 12 04:40:30 JST 2023
+#
+/home/abelab/t_oka/miniconda3/envs/espnet/bin/python3 /work/abelab4/t_oka/espnet/espnet2/bin/asr_train.py --use_preprocessor true --bpemodel none --token_type char --token_list data/jp_token_list/char/tokens.txt --non_linguistic_symbols none --cleaner none --g2p none --valid_data_path_and_name_and_type dump/raw/dev/wav.scp,speech,sound --valid_data_path_and_name_and_type dump/raw/dev/text,text,text --valid_shape_file exp/asr_stats_raw_jp_char_sp/valid/speech_shape --valid_shape_file exp/asr_stats_raw_jp_char_sp/valid/text_shape.char --resume true --init_param --ignore_init_mismatch false --fold_length 80000 --fold_length 150 --output_dir exp/asr_train_asr_conformer8_raw_jp_char_sp --config conf/tuning/train_asr_conformer8.yaml --frontend_conf fs=16000 --normalize=global_mvn --normalize_conf stats_file=exp/asr_stats_raw_jp_char_sp/train/feats_stats.npz --train_data_path_and_name_and_type dump/raw/tr_no_dev_sp/wav.scp,speech,sound --train_data_path_and_name_and_type dump/raw/tr_no_dev_sp/text,text,text --train_shape_file exp/asr_stats_raw_jp_char_sp/train/speech_shape --train_shape_file exp/asr_stats_raw_jp_char_sp/train/text_shape.char --ngpu 1 --multiprocessing_distributed True
+[jelinek5] 2023-01-12 04:40:33,159 (asr:411) INFO: Vocabulary size: 141
+[jelinek5] 2023-01-12 04:40:33,231 (conformer_encoder:136) WARNING: Using legacy_rel_pos and it will be deprecated in the future.
+[jelinek5] 2023-01-12 04:40:33,258 (conformer_encoder:236) WARNING: Using legacy_rel_selfattn and it will be deprecated in the future.
+/work/abelab4/t_oka/espnet/espnet2/schedulers/noam_lr.py:40: UserWarning: NoamLR is deprecated. Use WarmupLR(warmup_steps=25000) with Optimizer(lr=0.0015811388300841895)
+  warnings.warn(
+[jelinek5] 2023-01-12 04:40:34,650 (abs_task:1157) INFO: pytorch.version=1.10.1, cuda.available=True, cudnn.version=8005, cudnn.benchmark=False, cudnn.deterministic=True
+[jelinek5] 2023-01-12 04:40:34,653 (abs_task:1158) INFO: Model structure:
+ESPnetASRModel(
+  (frontend): DefaultFrontend(
+    (stft): Stft(n_fft=512, win_length=400, hop_length=160, center=True, normalized=False, onesided=True)
+    (frontend): Frontend()
+    (logmel): LogMel(sr=16000, n_fft=512, n_mels=80, fmin=0, fmax=8000.0, htk=False)
+  )
+  (normalize): GlobalMVN(stats_file=exp/asr_stats_raw_jp_char_sp/train/feats_stats.npz, norm_means=True, norm_vars=True)
+  (encoder): ConformerEncoder(
+    (embed): Conv2dSubsampling(
+      (conv): Sequential(
+        (0): Conv2d(1, 256, kernel_size=(3, 3), stride=(2, 2))
+        (1): ReLU()
+        (2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2))
+        (3): ReLU()
+      )
+      (out): Sequential(
+        (0): Linear(in_features=4864, out_features=256, bias=True)
+        (1): LegacyRelPositionalEncoding(
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (encoders): MultiSequential(
+      (0): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (1): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (2): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (3): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (4): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (5): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (6): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (7): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (8): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (9): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (10): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (11): EncoderLayer(
+        (self_attn): LegacyRelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(15,), stride=(1,), padding=(7,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (after_norm): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+  )
+  (decoder): TransformerDecoder(
+    (embed): Sequential(
+      (0): Embedding(141, 256)
+      (1): PositionalEncoding(
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (after_norm): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+    (output_layer): Linear(in_features=256, out_features=141, bias=True)
+    (decoders): MultiSequential(
+      (0): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (1): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (2): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (3): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (4): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (5): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.0, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (criterion_att): LabelSmoothingLoss(
+    (criterion): KLDivLoss()
+  )
+  (ctc): CTC(
+    (ctc_lo): Linear(in_features=256, out_features=141, bias=True)
+    (ctc_loss): CTCLoss()
+  )
+)
+
+Model summary:
+    Class Name: ESPnetASRModel
+    Total Number of model parameters: 43.05 M
+    Number of trainable parameters: 43.05 M (100.0%)
+    Size: 172.19 MB
+    Type: torch.float32
+[jelinek5] 2023-01-12 04:40:34,654 (abs_task:1161) INFO: Optimizer:
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 4.0
+    lr: 6.324555320336758e-08
+    weight_decay: 0
+)
+[jelinek5] 2023-01-12 04:40:34,654 (abs_task:1162) INFO: Scheduler: NoamLR(model_size=256, warmup_steps=25000)
+[jelinek5] 2023-01-12 04:40:34,655 (abs_task:1171) INFO: Saving the configuration in exp/asr_train_asr_conformer8_raw_jp_char_sp/config.yaml
+[jelinek5] 2023-01-12 04:40:34,987 (abs_task:1526) INFO: [train] dataset:
+ESPnetDataset(
+  speech: {"path": "dump/raw/tr_no_dev_sp/wav.scp", "type": "sound"}
+  text: {"path": "dump/raw/tr_no_dev_sp/text", "type": "text"}
+  preprocess: <espnet2.train.preprocessor.CommonPreprocessor object at 0x7f5fb2e334f0>)
+[jelinek5] 2023-01-12 04:40:34,987 (abs_task:1527) INFO: [train] Batch sampler: NumElementsBatchSampler(N-batch=130, batch_bins=15000000, sort_in_batch=descending, sort_batch=descending)
+[jelinek5] 2023-01-12 04:40:34,987 (abs_task:1528) INFO: [train] mini-batch sizes summary: N-batch=130, mean=166.1, min=3, max=362
+[jelinek5] 2023-01-12 04:40:35,005 (abs_task:1526) INFO: [valid] dataset:
+ESPnetDataset(
+  speech: {"path": "dump/raw/dev/wav.scp", "type": "sound"}
+  text: {"path": "dump/raw/dev/text", "type": "text"}
+  preprocess: <espnet2.train.preprocessor.CommonPreprocessor object at 0x7f5fb2e33a00>)
+[jelinek5] 2023-01-12 04:40:35,005 (abs_task:1527) INFO: [valid] Batch sampler: NumElementsBatchSampler(N-batch=2, batch_bins=15000000, sort_in_batch=descending, sort_batch=descending)
+[jelinek5] 2023-01-12 04:40:35,005 (abs_task:1528) INFO: [valid] mini-batch sizes summary: N-batch=2, mean=125.0, min=60, max=190
+[jelinek5] 2023-01-12 04:40:35,020 (abs_task:1526) INFO: [plot_att] dataset:
+ESPnetDataset(
+  speech: {"path": "dump/raw/dev/wav.scp", "type": "sound"}
+  text: {"path": "dump/raw/dev/text", "type": "text"}
+  preprocess: <espnet2.train.preprocessor.CommonPreprocessor object at 0x7f5fa8c580d0>)
+[jelinek5] 2023-01-12 04:40:35,021 (abs_task:1527) INFO: [plot_att] Batch sampler: UnsortedBatchSampler(N-batch=250, batch_size=1, key_file=exp/asr_stats_raw_jp_char_sp/valid/speech_shape, 
+[jelinek5] 2023-01-12 04:40:35,021 (abs_task:1528) INFO: [plot_att] mini-batch sizes summary: N-batch=3, mean=1.0, min=1, max=1
+[jelinek5] 2023-01-12 04:40:35,169 (trainer:276) INFO: 1/100epoch started
+/work/abelab4/t_oka/espnet/espnet2/layers/stft.py:164: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  olens = (ilens - self.n_fft) // self.hop_length + 1
+Traceback (most recent call last):
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/work/abelab4/t_oka/espnet/espnet2/bin/asr_train.py", line 23, in <module>
+    main()
+  File "/work/abelab4/t_oka/espnet/espnet2/bin/asr_train.py", line 19, in main
+    ASRTask.main(cmd=cmd)
+  File "/work/abelab4/t_oka/espnet/espnet2/tasks/abs_task.py", line 1019, in main
+    cls.main_worker(args)
+  File "/work/abelab4/t_oka/espnet/espnet2/tasks/abs_task.py", line 1315, in main_worker
+    cls.trainer.run(
+  File "/work/abelab4/t_oka/espnet/espnet2/train/trainer.py", line 282, in run
+    all_steps_are_invalid = cls.train_one_epoch(
+  File "/work/abelab4/t_oka/espnet/espnet2/train/trainer.py", line 556, in train_one_epoch
+    retval = model(**batch)
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/work/abelab4/t_oka/espnet/espnet2/asr/espnet_model.py", line 185, in forward
+    encoder_out, encoder_out_lens = self.encode(speech, speech_lengths)
+  File "/work/abelab4/t_oka/espnet/espnet2/asr/espnet_model.py", line 335, in encode
+    encoder_out, encoder_out_lens, _ = self.encoder(feats, feats_lengths)
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/work/abelab4/t_oka/espnet/espnet2/asr/encoder/conformer_encoder.py", line 331, in forward
+    xs_pad, masks = self.encoders(xs_pad, masks)
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/work/abelab4/t_oka/espnet/espnet/nets/pytorch_backend/transformer/repeat.py", line 18, in forward
+    args = m(*args)
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/work/abelab4/t_oka/espnet/espnet/nets/pytorch_backend/conformer/encoder_layer.py", line 165, in forward
+    self.feed_forward(x)
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/work/abelab4/t_oka/espnet/espnet/nets/pytorch_backend/transformer/positionwise_feed_forward.py", line 32, in forward
+    return self.w_2(self.dropout(self.activation(self.w_1(x))))
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/abelab/t_oka/miniconda3/envs/espnet/lib/python3.9/site-packages/torch/nn/functional.py", line 1848, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA out of memory. Tried to allocate 158.00 MiB (GPU 0; 23.65 GiB total capacity; 14.17 GiB already allocated; 27.81 MiB free; 14.38 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+# Accounting: time=6 threads=1
+# Ended (code 1) at Thu Jan 12 04:40:36 JST 2023, elapsed time 6 seconds
+

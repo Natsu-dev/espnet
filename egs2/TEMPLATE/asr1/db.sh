@@ -27,7 +27,7 @@ REVERB_OUT="${PWD}/REVERB"  # Output file path
 CHIME3=
 CHIME4=
 CHIME5=
-CSJDATATOP=
+CSJDATATOP="/work/abelab4/t_oka/espnet/egs2/csj/asr1/data/csj-symlinks"
 CSJVER=dvd  ## Set your CSJ format (dvd or usb).
             ## Usage    :
             ## Case DVD : We assume CSJ DVDs are copied in this directory with the names dvd1, dvd2,...,dvd17.
@@ -65,9 +65,9 @@ MUST_C=downloads
 NSC=
 JMD=downloads
 JSSS=downloads
-JSUT=downloads
+JSUT="/abelab/DB4/JSUT"
 JTUBESPEECH=downloads
-JVS=downloads
+JVS="/abelab/DB4/JVS_Corpus/jvs_ver1"
 KSS=
 QASR_TTS=downloads
 SNIPS= # smart-light-en-closed-field data path

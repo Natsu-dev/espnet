@@ -40,6 +40,9 @@ fi
 if [ ${stage} -le 0 ] && [ ${stop_stage} -ge 0 ]; then
     # Initial normalization of the data
     local/data_prep.sh ${db_root}/jsut_ver1.1-p1 data/train ${fs}
+    # 力技変換なのでカスに近い
+    python pyscripts/utils/text_tokenize.py data data
+    
     utils/validate_data_dir.sh --no-feats data/train
 
     # changing the sampling rate option in pitch.conf and fbank.conf
@@ -47,6 +50,7 @@ if [ ${stage} -le 0 ] && [ ${stop_stage} -ge 0 ]; then
 fi
 
 if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
+
     # make evaluation and devlopment sets
     utils/subset_data_dir.sh --first data/train 500 data/deveval
     utils/subset_data_dir.sh --first data/deveval 250 data/${recog_set}

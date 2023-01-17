@@ -55,4 +55,13 @@ if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
     utils/subset_data_dir.sh --last data/train ${n} data/${train_set}
 fi
 
+if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
+    # 力技変換なのでカスに近い
+    python pyscripts/utils/text_tokenize.py data/dev/text
+    python pyscripts/utils/text_tokenize.py data/deveval/text
+    python pyscripts/utils/text_tokenize.py data/eval1/text
+    python pyscripts/utils/text_tokenize.py data/tr_no_dev/text
+    python pyscripts/utils/text_tokenize.py data/train/text
+fi
+
 log "Successfully finished. [elapsed=${SECONDS}s]"

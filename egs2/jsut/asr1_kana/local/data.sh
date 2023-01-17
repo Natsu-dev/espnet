@@ -55,4 +55,13 @@ if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
     utils/subset_data_dir.sh --last data/train ${n} data/${train_set}
 fi
 
+if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
+    # —Í‹Z•ÏŠ·‚È‚Ì‚ÅƒJƒX‚É‹ß‚¢
+    python pyscripts/utils/text_kanaize.py data/dev/text
+    python pyscripts/utils/text_kanaize.py data/deveval/text
+    python pyscripts/utils/text_kanaize.py data/eval1/text
+    python pyscripts/utils/text_kanaize.py data/tr_no_dev/text
+    python pyscripts/utils/text_kanaize.py data/train/text
+fi
+
 log "Successfully finished. [elapsed=${SECONDS}s]"
